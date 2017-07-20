@@ -9,6 +9,9 @@ package hhm.pkg1.hirmuvallan.painajainen;
  *
  * @author sysadmin
  */
+
+// THIS CLASS WOULD BE NAMED 'CharacterClass' BUT JAVA CLASSES CAN'T BE NAMED 'Class'
+
 public enum playerType {
     inkvisiittori(3),
     kapinallinen(4),

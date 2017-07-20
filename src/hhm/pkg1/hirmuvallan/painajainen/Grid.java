@@ -224,14 +224,14 @@ public class Grid {
     private boolean moveLegality(int toX, int toY, Character character) {
         // implement handling of map edges
         try {
-            boolean i = gridArray[toX][toY].travesable;
+            boolean i = gridArray[toX][toY].traversable;
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("You're trying to move off map");
             //character.map.draw();
             return false;
         }
 
-        if (!gridArray[toX][toY].travesable) {
+        if (!gridArray[toX][toY].traversable) {
             System.out.println("Destination cell is not traversable");
             return false;
         } else if (gridArray[toX][toY].occupant == null) {

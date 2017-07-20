@@ -101,10 +101,10 @@ public class gameLoop {
                 if (current.alive && !current.dying) {
                     kehveli.draw();
                     // System.out.println("Nearest enemy is " + current.nearestEnemy().fullName + " (distance: " + current.nearestEnemy().enemyDistance + ")");
-                    if (current.team == 1) {
+                    if (current.team == 1) { // if player team, prompt for input
                         System.out.print("Move character: " + current.fullName + ": ");
                         kehveli.moveTo(current, sc.nextInt());
-                    } else {
+                    } else { // if somebody else, leave it to AI
                         System.out.println("AI character " + current.fullName + " makes the next move");
                         AI.simpleMove(current, current.nearestEnemy().location);
                         

@@ -12,6 +12,10 @@ package hhm.pkg1.hirmuvallan.painajainen;
 
 // THIS CLASS WOULD BE NAMED 'CharacterClass' BUT JAVA CLASSES CAN'T BE NAMED 'Class'
 
+// @TODO: define logic for class paths aka. different ways character class types
+// example: Mercenary (Soturi) class get three classpath options: Ronin, Hakkapeliitta and Svaabi
+// which all get different feats at different levels
+
 public enum playerType {
     inkvisiittori(3),
     kapinallinen(4),

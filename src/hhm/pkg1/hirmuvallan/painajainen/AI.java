@@ -67,6 +67,7 @@ public class AI {
     }
 
     public static ArrayList<Cell> calculateRoute (Character character, Cell target) {
+        // @TODO: everything
         ArrayList<Cell> route = new ArrayList<>();
         
         int xDiff = character.location.locX - target.locX;
